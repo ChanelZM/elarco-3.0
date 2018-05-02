@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elarco</title>
+    <link href="img/elarco-favicon.png" rel="shortcut icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="loader-wrapper">
+        <img src="img/elarco-logo-white.svg" alt="" class="loader" />
+    </div>
+    <header class="header">
+        <a href="index.html"><img src="img/elarco-logo-white.svg" alt="Elarco Logo" class="header__logo" /></a>
+        <nav class="top-nav">
+            <svg class="top-nav__menu-icon top-nav__menu-icon_lightgrey" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 23 18" style="enable-background:new 0 0 23 18;" xml:space="preserve" hidden>
+                <g>
+                	<rect x="0.8" y="1.2" width="21.4" height="3.4"/>
+                	<rect x="0.8" y="7.8" width="21.4" height="3.4"/>
+                	<rect x="0.8" y="14.5" width="21.4" height="3.4"/>
+                </g>
+            </svg>
+            <ul class="top-nav__list nav__list">
+                <div class="nav__wrap">
+                    <li class="top-nav__item nav__item hidden">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="top-nav__item nav__item">
+                        <a href="content/work.html" class="nav__link">Work</a>
+                    </li>
+                    <li class="top-nav__item nav__item">
+                        <a href="content/contact.html" class="nav__link">Contact</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="games">
+            <section class="section games__start">
+                <div class="section__content-wrap section__content-wrap-medium">
+                    <h2 class="section__title section__title-lowercase">Here you are!</h2>
+                    <p class="section__par">
+                        In case you’re curious, you should know that in our process lies our magic. This is elarco.
+                    </p>
+                    <button class="section__button game-start">Discover</button>
+                </div>
+            </section>
+            <section class="section games__game" id="order">
+                <p class="section__par games__hint">
+                    Click the pieces of the arch in the right order.
+                </p>
+                <svg class="arch-order game-illustration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.4 29.7">
+                    <path class="arch-order__part" id="3" d="M7.9 7.8c-1.6 1.6-3 3.3-4.1 5.1l9.9 6c.7-1.3 1.5-2.6 2.5-3.7 1.5-1.6 3.2-2.8 5.2-3.5L17.9 1.5c-3.7 1.3-7 3.4-10 6.3z"/>
+                    <path class="arch-order__part" id="4" d="M46.6 7.8c-2.7-2.6-5.7-4.6-8.9-5.9L34 12c1.6.7 3 1.8 4.3 3.1 1.1 1.2 2 2.7 2.7 4.2l10-5.9c-1.2-2-2.7-3.8-4.4-5.6z"/>
+                    <path class="arch-order__part" id="2" d="M41.4 20.3c.7 2 1 4.2 1 6.7 0 .9-.1 1.8-.2 2.6h12.1c.1-.9.1-1.8.1-2.7 0-4.7-1-8.9-3-12.7l-10 6.1z"/>
+                    <path class="arch-order__part" id="5" d="M36.7 1.6C33.8.6 30.6 0 27.2 0c-3 0-5.8.4-8.4 1.2l3.6 10.1c1.5-.4 3.1-.7 4.8-.7 2.2 0 4.1.3 5.9 1l3.6-10z"/>
+                    <path class="arch-order__part" id="1" d="M3.3 13.7C1.1 17.6 0 21.8 0 26.6c0 1.1.1 2.1.2 3.1h12.1c-.1-.9-.2-1.9-.2-2.9 0-2.6.4-4.9 1.3-7L3.3 13.7z"/>
+                </svg>
+                <audio class="doremifasol">
+                    <source src="audio/1-do.mp3" type="audio/mpeg" />
+                    <source src="audio/1-do.ogg" type="audio/ogg" />
+                    <source src="audio/1-do.wav" type="audio/wav" />
+                </audio>
+                <audio class="doremifasol">
+                    <source src="audio/2-re.mp3" type="audio/mpeg" />
+                    <source src="audio/2-re.ogg" type="audio/ogg" />
+                    <source src="audio/2-re.wav" type="audio/wav" />
+                </audio>
+                <audio class="doremifasol">
+                    <source src="audio/3-mi.mp3" type="audio/mpeg" />
+                    <source src="audio/3-mi.ogg" type="audio/ogg" />
+                    <source src="audio/3-mi.wav" type="audio/wav" />
+                </audio>
+                <audio class="doremifasol">
+                    <source src="audio/4-fa.mp3" type="audio/mpeg" />
+                    <source src="audio/4-fa.ogg" type="audio/ogg" />
+                    <source src="audio/4-fa.wav" type="audio/wav" />
+                </audio>
+                <audio class="doremifasol">
+                    <source src="audio/5-sol.mp3" type="audio/mpeg" />
+                    <source src="audio/5-sol.ogg" type="audio/ogg" />
+                    <source src="audio/5-sol.wav" type="audio/wav" />
+                </audio>
+                <div class="section__content-wrap section__content-wrap-medium">
+                    <h2 class="section__title section__title-lowercase">Order</h2>
+                    <!-- <p class="section__par">
+                        or·der
+                    </p>
+                    <p class="section__par">
+                        ˈôrdər/
+                    </p>
+                    <p class="section__par">
+                        Noun
+                    </p>
+                    <p class="section__par">
+                        1. the arrangement or disposition of people or things in relation to each other according to a particular sequence, pattern, or method.
+                    </p>
+                    <h3 class="">
+                        Synonyms
+                    </h3>
+                    <p class="section__par">
+                        sequence, arrangement, organization, disposition, system, series, succession, grouping, classification, categorization, codification, systematization.
+                    </p> -->
+                    <p class="section__par">
+                        Our rationale behind every methodology. Everything has an order, and in order we find everything.
+                    </p>
+                    <button class="section__button game-continue">Continue</button>
+                </div>
+            </section>
+            <section class="section games__game" id="depth">
+                <p class="section__par games__hint">
+                    Align all arches.
+                </p>
+                <div class="arch-depth-wrap">
+                    <svg class="arch-depth arch1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch19" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch21" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch27" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                    <svg class="arch-depth arch30 game-illustration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                        <path class="arch-depth__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                    </svg>
+                </div>
+                <audio class="sonar">
+                    <source src="audio/sonar.mp3" type="audio/mpeg" />
+                    <source src="audio/sonar.wav" type="audio/wav" />
+                </audio>
+                <div class="section__content-wrap section__content-wrap-medium">
+                    <h2 class="section__title section__title-lowercase">Depth</h2>
+                    <p class="section__par">
+                        A drive to go beyond boundaries, to expose in detail every layer of the process. Simple on the eye, complex as a whole.
+                    </p>
+                    <button class="section__button game-continue">Continue</button>
+                </div>
+            </section>
+            <section class="section games__game" id="intuition">
+                <p class="section__par games__hint">
+                    Get the arch into the right position.
+                </p>
+                <svg class="arch-intuition game-illustration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610.3 332.9">
+                    <path class="arch-intuition__part" d="M137.4 298.9c-1.9-47.4 14.8-93.6 46.4-128.9 31.4-33.6 75.9-51.8 121.9-50 46.2-1.9 90.9 16.4 122.5 50 30.2 32.9 45.4 76.6 45.4 131.3 0 9.8-.6 19.5-1.8 29.2h133.9c.8-9.7 1.3-19.7 1.3-29.8 1.6-79.7-30-156.5-87.1-212.1C463.2 31.8 385.7.6 305.3 2.2c-80-1.6-157.2 29.4-213.7 86C34.5 142.3 2.7 217.9 3.9 296.5c0 11.7.7 23.2 1.7 34.5h133.8c-1.3-10.7-1.9-21.4-2-32.1"/>
+                </svg>
+                <div class="circle">
+                    <p class="section__par circle__hint">
+                        Move the cursor outside of the arch to rotate it.
+                    </p>
+                </div>
+                <audio class="ticking-sound">
+                    <source src="audio/tick4.ogg" type="audio/ogg">
+                    <source src="audio/tick4.mp3" type="audio/mpeg">
+                    <source src="audio/tick4.wav" type="audio/wav">
+                </audio>
+                <div class="section__content-wrap section__content-wrap-medium">
+                    <h2 class="section__title section__title-lowercase">Intuition</h2>
+                    <p class="section__par">
+                        Intuition is our compass to forsee, to step forward. An internal insight as a guide.
+                    </p>
+                </div>
+            </section>
+            <section class="section games__pause hidden">
+                <div class="section__content-wrap section__content-wrap-medium">
+                    <h2 class="section__title section__title-lowercase">Game paused</h2>
+                </div>
+            </section>
+            <div class="scroll-down scroll-down_centered">
+                <div class="scroll-down-rect">
+
+                </div>
+            </div>
+        </div>
+        <div class="wrap e-wrap">
+            <p class="basic__p home__p">
+                elarco is a Product Design company, based in Barcelona, working for clients globally, using industrial, engineering and strategy services to bring ideas to life, and to the market.
+            </p>
+        </div>
+        <section class="section" id="section-work">
+            <div class="section__content-wrap section__content-wrap_left">
+                <h3 class="section__title section__work-title section-work-1">We do things</h3>
+                <h3 class="section__title section__work-title section-work-2">We do them right</h3>
+                <p class="section__par section__work-p section-work-2">
+                    We research, test, iterate, prototype, engineer and create the most viable, useful and optimal solution to a problem.
+                </p>
+                <a href="content/work.html" class="section__button section__button-nomargin nav__link section__work-button">See our work</a>
+            </div>
+        </section>
+        <div class="wrap l-wrap">
+            <p class="basic__p home__p">
+                We understand design as a 360º discipline, a process by which to find the right answer, we have to make the right questions, putting the user first.
+            </p>
+        </div>
+        <section class="section section_fit">
+            <div class="service-sldr-wrap">
+                <div class="service-sldr__nav">
+                    <section class="service-sldr__section">
+                        <div class="service-sldr__circle">
+                            <img src="img/icon_strategy.png" alt="Strategy icon" class="slider_icon" />
+                        </div>
+                        <div class="service-sldr__g">
+                            <h3 class="service-sldr__title"><a href="#service-sldr-1" class="service-sldr__link">Research & Strategy</a></h3>
+                            <p class="service-sldr__p">
+                                Find your target market. Know your consumer. Work for them.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="service-sldr__section">
+                        <div class="service-sldr__circle">
+                            <img src="img/icon_design.png" alt="Design icon" class="slider_icon" />
+                        </div>
+                        <div class="service-sldr__g">
+                            <h3 class="service-sldr__title"><a href="#service-sldr-2" class="service-sldr__link">Design</a></h3>
+                            <p class="service-sldr__p">
+                                Create the right product, the most optimal solution for a problem.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="service-sldr__section">
+                        <div class="service-sldr__circle">
+                            <img src="img/icon_engineering.png" alt="Engineering icon" class="slider_icon" />
+                        </div>
+                        <div class="service-sldr__g">
+                            <h3 class="service-sldr__title"><a href="#service-sldr-3" class="service-sldr__link">Engineering</a></h3>
+                            <p class="service-sldr__p">
+                                Build with the ideal technology, and the right structural fit.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="service-sldr">
+                    <div class="service-sldr__img-wrap" id="service-sldr-1">
+                        <picture>
+                            <source media="(max-width: 900px)" srcset="img/services_h_s_research.jpg" />
+                            <source media="(max-width: 1200px)" srcset="img/services_h_m_research.jpg" />
+                            <source media="(max-width: 1600px)" srcset="img/services_h_l_research.jpg" />
+                            <img src="img/services_h_xl_research.jpg" alt="Image of a research report book" class="service-sldr__img" />
+                        </picture>
+                    </div>
+                    <div class="service-sldr__img-wrap service-sldr__img-wrap_hidden" id="service-sldr-2">
+                        <picture>
+                            <source media="(max-width: 900px)" srcset="img/services_h_s_design.jpg" />
+                            <source media="(max-width: 1200px)" srcset="img/services_h_m_design.jpg" />
+                            <source media="(max-width: 1600px)" srcset="img/services_h_l_design.jpg" />
+                            <img src="img/services_h_xl_design.jpg" alt="Sideview of the Camera T4F" class="service-sldr__img" />
+                        </picture>
+                    </div>
+                    <div class="service-sldr__img-wrap service-sldr__img-wrap_hidden" id="service-sldr-3">
+                        <picture>
+                            <source media="(max-width: 900px)" srcset="img/services_h_s_engineering.jpg" />
+                            <source media="(max-width: 1200px)" srcset="img/services_h_m_engineering.jpg" />
+                            <source media="(max-width: 1600px)" srcset="img/services_h_l_engineering.jpg" />
+                            <img src="img/services_h_xl_engineering.jpg" alt="Product with sketches" class="service-sldr__img" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <audio class="complete-sound">
+            <source src="audio/complete.mp3" type="audio/mpeg" />
+            <source src="audio/complete.wav" type="audio/wav" />
+        </audio>
+        <audio class="wrong-sound">
+            <source src="audio/wrong.mp3" type="audio/mpeg" />
+            <source src="audio/wrong.wav" type="audio/wav" />
+        </audio>
+        <a href="content/contact.html" class="basic-button button_big">Contact</a>
+    </main>
+    <footer class="basic-footer">
+        All rights reserved elarco 2018©
+    </footer>
+    <script src="js/toggle-menu.js"></script>
+    <script src="js/service-slider.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/section-work-animation.js"></script>
+    <script src="js/preload.js"></script>
+</body>
+</html>
