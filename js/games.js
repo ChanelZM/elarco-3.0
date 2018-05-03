@@ -13,7 +13,8 @@
     var count = 0,
         gamesRect = gameSections[0].getBoundingClientRect();
 
-    var index;
+    var index,
+        timeoutFinish;
 
     document.querySelector('.complete-sound').load();
 
@@ -238,8 +239,7 @@
             sound = document.querySelector('.ticking-sound'),
             archCoordinates = {};
 
-            var soundInterval,
-                timeoutFinish;
+            var soundInterval;
 
             sound.load();
 
@@ -306,33 +306,34 @@
 
             function rotateArch(degrees){
                 playTickingSound(degrees);
-
+                clearTimeout(timeoutFinish);
                 //If the user after half a second is still in the right position, consider it finished
                 if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
-                    timeoutFinish = setTimeout(function(){
-                        if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
-                            arch.style.transition = 'transform 0.2s ease';
-                            arch.style.transform = 'rotate(0deg)';
-                            archPath.style.fill = 'white';
+                    arch.style.transform = 'rotate(' + degrees + 'deg)';
+                    timeoutFinish = setTimeout(finished, 500);
+                     function finished(){
+                         if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
+                             arch.style.transition = 'transform 0.2s ease';
+                             arch.style.transform = 'rotate(0deg)';
+                             archPath.style.fill = 'white';
 
-                            setTimeout(function(){
-                                arch.style.transition = '';
-                            }, 200);
+                             setTimeout(function(){
+                                 arch.style.transition = '';
+                             }, 200);
 
-                            sound.pause();
+                             sound.pause();
 
-                            document.querySelector('.circle').removeEventListener('mouseleave', addMousemove);
-                            document.querySelector('.circle').classList.add('hidden');
-                            document.removeEventListener('mousemove', calculateMouseDegrees);
-                            window.removeEventListener('deviceorientation', getZRotation);
-                            sound.removeEventListener('ended', loopSound);
-                            //If you have completed the game, show description about keyword
-                            toggleGameInfo('intuition');
-                            scrollDown.classList.remove('hidden');
-                        }
-                    }, 500);
+                             // document.querySelector('.circle').removeEventListener('mouseleave', addMousemove);
+                             // document.querySelector('.circle').classList.add('hidden');
+                             document.removeEventListener('mousemove', calculateMouseDegrees);
+                             window.removeEventListener('deviceorientation', getZRotation);
+                             sound.removeEventListener('ended', loopSound);
+                             //If you have completed the game, show description about keyword
+                             toggleGameInfo('intuition');
+                             scrollDown.classList.remove('hidden');
+                         }
+                     }
                 } else {
-                    clearTimeout(timeoutFinish);
                     arch.style.transform = 'rotate(' + degrees + 'deg)';
                 }
             }
@@ -356,8 +357,8 @@
             document.addEventListener('mousemove', calculateMouseDegrees);
             sound.addEventListener('ended', loopSound);
 
-            document.querySelector('.circle').addEventListener('mouseenter', removeMousemove);
-            document.querySelector('.circle').addEventListener('mouseleave', addMousemove);
+            // document.querySelector('.circle').addEventListener('mouseenter', removeMousemove);
+            // document.querySelector('.circle').addEventListener('mouseleave', addMousemove);
 
             window.addEventListener('scroll', function(){
                 if(window.pageYOffset >= gamesRect.height && !document.querySelector('#intuition.hidden')) {
