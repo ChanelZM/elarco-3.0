@@ -238,7 +238,8 @@
             sound = document.querySelector('.ticking-sound'),
             archCoordinates = {};
 
-            var soundInterval;
+            var soundInterval,
+                timeoutFinish;
 
             sound.load();
 
@@ -308,25 +309,30 @@
 
                 //If the user after half a second is still in the right position, consider it finished
                 if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
-                    arch.style.transition = 'rotate 0.2s ease';
-                    arch.style.transform = 'rotate(0deg)';
-                    archPath.style.fill = 'white';
+                    timeoutFinish = setTimeout(function(){
+                        if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
+                            arch.style.transition = 'transform 0.2s ease';
+                            arch.style.transform = 'rotate(0deg)';
+                            archPath.style.fill = 'white';
 
-                    setTimeout(function(){
-                        arch.style.transition = '';
-                    }, 200);
+                            setTimeout(function(){
+                                arch.style.transition = '';
+                            }, 200);
 
-                    sound.pause();
+                            sound.pause();
 
-                    document.querySelector('.circle').removeEventListener('mouseleave', addMousemove);
-                    document.querySelector('.circle').classList.add('hidden');
-                    document.removeEventListener('mousemove', calculateMouseDegrees);
-                    window.removeEventListener('deviceorientation', getZRotation);
-                    sound.removeEventListener('ended', loopSound);
-                    //If you have completed the game, show description about keyword
-                    toggleGameInfo('intuition');
-                    scrollDown.classList.remove('hidden');
+                            document.querySelector('.circle').removeEventListener('mouseleave', addMousemove);
+                            document.querySelector('.circle').classList.add('hidden');
+                            document.removeEventListener('mousemove', calculateMouseDegrees);
+                            window.removeEventListener('deviceorientation', getZRotation);
+                            sound.removeEventListener('ended', loopSound);
+                            //If you have completed the game, show description about keyword
+                            toggleGameInfo('intuition');
+                            scrollDown.classList.remove('hidden');
+                        }
+                    }, 500);
                 } else {
+                    clearTimeout(timeoutFinish);
                     arch.style.transform = 'rotate(' + degrees + 'deg)';
                 }
             }
