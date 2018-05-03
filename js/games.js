@@ -239,7 +239,8 @@
             sound = document.querySelector('.ticking-sound'),
             archCoordinates = {};
 
-            var soundInterval;
+            var soundInterval,
+                lastDegrees;
 
             sound.load();
 
@@ -308,8 +309,12 @@
                 degrees = Math.floor(degrees);
 
                 playTickingSound(degrees);
-                clearTimeout(timeoutFinish);
-                
+
+                if(lastDegrees != degrees){
+                    lastDegrees = degrees;
+                    clearTimeout(timeoutFinish);
+                }
+
                 //If the user after half a second is still in the right position, consider it finished
                 if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
                     arch.style.transform = 'rotate(' + degrees + 'deg)';
