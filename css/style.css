@@ -514,8 +514,7 @@ body {
     z-index: 1;
 }
 .section__title {
-    margin: 0 0 13px 0;
-    margin: 0 0 0.8rem 0;
+    margin: 0;
     font-size: 61px;
     font-size: 3.8rem;
     font-weight: 200;
@@ -2041,6 +2040,11 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
 }
 
 @media screen and (orientation: landscape) and (min-width: 40rem){
+    /* HOME */
+    .section__content-wrap-medium {
+        width: 496px;
+        width: 31rem;
+    }
     /* PROJECT DETAIL */
     .basic-sldr-wrap,
     .project-content,
@@ -3344,13 +3348,15 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         height: 90vh;
     }
     .section__par {
-        width: 400px;
-        width: 25rem;
         margin: 32px 0 80px 0;
         margin: 2rem 0 5rem 0;
         font-size: 19px;
         font-size: 1.2rem;
         font-weight: 100;
+    }
+    .section__par_marginb {
+        margin: 0 0 32px 0;
+        margin: 0 0 2rem 0;
     }
     .circle__hint {
         width: 15rem;
