@@ -323,8 +323,6 @@
 
                              sound.pause();
 
-                             // document.querySelector('.circle').removeEventListener('mouseleave', addMousemove);
-                             // document.querySelector('.circle').classList.add('hidden');
                              document.removeEventListener('mousemove', calculateMouseDegrees);
                              window.removeEventListener('deviceorientation', getZRotation);
                              sound.removeEventListener('ended', loopSound);
@@ -356,9 +354,6 @@
 
             document.addEventListener('mousemove', calculateMouseDegrees);
             sound.addEventListener('ended', loopSound);
-
-            // document.querySelector('.circle').addEventListener('mouseenter', removeMousemove);
-            // document.querySelector('.circle').addEventListener('mouseleave', addMousemove);
 
             window.addEventListener('scroll', function(){
                 if(window.pageYOffset >= gamesRect.height && !document.querySelector('#intuition.hidden')) {
