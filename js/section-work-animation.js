@@ -1,6 +1,10 @@
 /*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
 (function(){
-    var rect;
+    var rect,
+        i;
+
+    var images = document.querySelectorAll('.img_movein'),
+        animation = false;
 
     function init(){
         rect = document.getElementById('section-work').getBoundingClientRect();
@@ -15,13 +19,17 @@
     }
 
     function getScrollDistance(){
-        if (window.pageYOffset >= rect.top){
+        if (window.pageYOffset >= rect.top - 80 && animation == false){
+            animation = true;
             document.removeEventListener('scroll', getScrollDistance);
             startAnimation();
+        } else if (window.pageYOffset >= rect.top - 80){
+            document.querySelector('.section-work-2.section__par').style.display = 'block';
         }
     }
 
     function startAnimation(){
+        var count = 0;
         document.querySelector('.section-work-1').classList.add('fade-out');
         document.querySelector('.section__work-button').style.display = 'block';
         document.querySelector('.section__work-button').style.opacity = '0';
@@ -38,6 +46,19 @@
         setTimeout(function(){
             document.querySelector('.section__work-button').style.opacity = '1';
         }, 3000);
+        setTimeout(function(){
+            images[0].style.right = '-100%';
+        }, 2500);
+        setInterval(function(){
+            count++;
+            images[count].style.right = '0';
+            setTimeout(function(){
+                images[count].style.right = '-100%';
+                if(count == (images.length-1)){
+                    count = -1;
+                }
+            }, 3000);
+        }, 4000);
     }
 
     init();

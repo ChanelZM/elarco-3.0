@@ -721,7 +721,7 @@ body {
     transform-origin: 0 0;
 }
 #section-work {
-    background-image: url('../img/ufo_small.png');
+    background-image: url('../img/sectionwork_3_s.png');
     background-repeat: no-repeat;
     background-position: center 29%;
     background-position: center 29vw;
@@ -729,6 +729,9 @@ body {
     -moz-transition: background-position 1s ease;
     -ms-transition: background-position 1s ease;
     transition: background-position 1s ease;
+}
+.section-work__imgs {
+    display: none;
 }
 .section-work-1 {
     opacity: 1;
@@ -2958,17 +2961,48 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         width: 640px;
         width: 40rem;
     }
+    .span_display_none {
+        display: none;
+    }
     .section-work-2 {
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     }
+    .section-work__imgs {
+        display: block;
+    }
+    .img_movein {
+        position: absolute;
+        height: 68%;
+        bottom: 0;
+        right: -120%;
+        -webkit-transition: right 1s ease;
+        -moz-transition: right 1s ease;
+        -ms-transition: right 1s ease;
+        transition: right 1s ease;
+    }
+    .img_movein_start {
+        right: 0;
+    }
+    .img_movein_center {
+        top: 50%;
+        bottom: auto;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .img_movein_marginr {
+        margin-right: 12%;
+    }
     #section-work {
+        position: relative;
         height: 600px;
         height: 90vh;
-        background-position: 124% center;
-        background-size: 33%;
+        background-image: none;
+        overflow: hidden;
     }
     /* WORK */
     .project__title {
@@ -3007,7 +3041,7 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .section-work-2.section__par {
         margin-left: 32px;
         margin-left: 2rem;
-        top: 64%;
+        top: 69%;
     }
     .section3__img,
     .section3__p,
@@ -3422,6 +3456,9 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .section-work-2.move-in {
         left: 11%;
         left: 11vw;
+    }
+    .section-work-2.section__par {
+        top: 65%;
     }
     .section__work-button {
         left: 49%;
