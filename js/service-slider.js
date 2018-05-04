@@ -64,4 +64,10 @@
     checkScreenSize();
 
     window.addEventListener('resize', checkScreenSize);
+
+    for(i = 0; i < links.length; i++){
+        links[i].addEventListener('click', function(e){
+            e.preventDefault();
+        });
+    }
 })();
