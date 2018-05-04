@@ -5,14 +5,10 @@
         right = document.querySelector('#right'),
         amountOfProjects = document.querySelectorAll('#right .project');
 
-    var lastScrollPosition = 0,
-        position = 0;
+    var position = 0;
 
-    var i,
-        startMargin,
-        projectHeight,
-        touchStart,
-        touchMove;
+    var startMargin,
+        projectHeight;
 
     function init(){
         projectHeight = getHeight(projects[0]);
@@ -30,15 +26,11 @@
     function adjustValues(){
         position = 0;
         //If its landscape, recalculate margins
-        if(window.innerWidth > window.innerHeight){
-            if('ontouchstart' in document.documentElement == false){
-                document.querySelector('.reverse').classList.add('overflow_hidden');
-            }
+        if(window.innerWidth > window.innerHeight & 'ontouchstart' in document.documentElement == false){
+            document.querySelector('.reverse').classList.add('overflow_hidden');
             //Timeout because the browser uses a transition for resizing/changing orientation which conflicts with calculating project height.
             setTimeout(function(){
                 window.addEventListener('wheel', detectScrollDirection);
-                window.addEventListener('touchstart', getTouchStart);
-                window.addEventListener('touchmove', detectTouchDirection);
 
                 projectHeight = getHeight(projects[0]);
                 startMargin = -(amountOfProjects.length * projectHeight) + projectHeight;
@@ -50,8 +42,6 @@
         } else {
             document.querySelector('.reverse').classList.remove('overflow_hidden');
             window.removeEventListener('wheel', detectScrollDirection);
-            window.removeEventListener('touchstart', getTouchStart);
-            window.removeEventListener('touchmove', detectTouchDirection);
 
             left.style.marginTop = '0px';
             right.style.marginTop = '0px';
@@ -75,26 +65,6 @@
         }
     }
 
-    function getTouchStart(e){
-        touchStart = e.touches[0].clientY;
-    }
-
-    //Touch devices detect touch direction
-    function detectTouchDirection(e){
-        touchMove = e.touches[0].clientY;
-
-        if(touchMove > touchStart && position > 0){
-            position--;
-            window.removeEventListener('touchmove', detectTouchDirection);
-            smoothScroll();
-        }
-        if(touchMove < touchStart && position < amountOfProjects.length - 1){
-            position++;
-            window.removeEventListener('touchmove', detectTouchDirection);
-            smoothScroll();
-        }
-    }
-
     //Adapt margin to get an invert scrolling effect.
     function smoothScroll(){
         left.style.marginTop = '-' + position * projectHeight + 'px';
@@ -103,7 +73,7 @@
         //Make it possible for the user to do it again
         setTimeout(function(){
             window.addEventListener('wheel', detectScrollDirection);
-            window.addEventListener('touchmove', detectTouchDirection);
+            // window.addEventListener('touchmove', detectTouchDirection);
         }, 1100);
     }
 
@@ -114,14 +84,6 @@
         init();
 
         window.addEventListener('wheel', detectScrollDirection);
-        window.addEventListener('resize', adjustValues);
-    } else if(window.innerWidth > window.innerHeight && 'ontouchstart' in document.documentElement == true){
-        document.querySelector('.reverse').classList.add('overflow_hidden');
-
-        init();
-
-        window.addEventListener('touchstart', getTouchStart);
-        window.addEventListener('touchmove', detectTouchDirection);
         window.addEventListener('resize', adjustValues);
     }
 })();
