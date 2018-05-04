@@ -90,7 +90,7 @@
 
             //After the users touch ends, retrieve the position again and decide if the user swiped right or left
             sliders[sliderWrap[i].id].slider.addEventListener('touchend', function(e){
-                var sliderId = e.target.parentNode.id.split('_')[0];
+                var sliderId = e.target.parentNode.parentNode.id.split('_')[0];
 
                 //User swiped left so go forth a slide
                 if (e.changedTouches[0].pageX < touchX){
