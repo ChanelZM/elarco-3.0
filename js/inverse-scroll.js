@@ -79,6 +79,7 @@
 
     //Only fire when the user is in landscape mode
     if(window.innerWidth > window.innerHeight && 'ontouchstart' in document.documentElement == false){
+        document.querySelector('.scroll-down').classList.remove('scroll-down_display_none');
         document.querySelector('.reverse').classList.add('overflow_hidden');
 
         init();

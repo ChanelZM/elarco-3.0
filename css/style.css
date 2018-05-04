@@ -597,6 +597,9 @@ body {
     opacity: 0.4;
     z-index: 1;
 }
+.scroll-down_display_none {
+    display: none;
+}
 .scroll-down_centered {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1669,6 +1672,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         height: 30rem;
         height: calc(100vh - 7rem);
     }
+    .vertical .half-part_closed {
+        height: 112px;
+        height: 7rem;
+    }
 }
 
 @media screen and (orientation: landscape){
@@ -1815,7 +1822,8 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         margin-top: 32px;
         margin-top: 2rem;
     }
-    .fs-section__img {
+    .fs-section__img,
+    .fs-section__img_right {
         height: auto;
         width: 120%;
         top: 50%;
@@ -1824,14 +1832,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-    }
-    .fs-section__img_right {
-        left: 50%;
-        right: auto;
-        -webkit-transform: translate(-50%);
-        -moz-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-        transform: translate(-50%);
     }
     .fs-section__title {
         font-size: 48px;
