@@ -1617,7 +1617,7 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
 .vertical .half-part {
     height: 448px;
     height: 28rem;
-    height: calc(100vh - 7rem);
+    height: calc(90vh - 7rem);
 }
 .vertical .half-part_closed {
     height: 112px;
@@ -1670,7 +1670,7 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .vertical .half-part {
         height: 480px;
         height: 30rem;
-        height: calc(100vh - 7rem);
+        height: calc(90vh - 7rem);
     }
     .vertical .half-part_closed {
         height: 112px;
@@ -1960,7 +1960,7 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .vertical .half-part {
         height: 544px;
         height: 34rem;
-        height: calc(100vh - 7rem);
+        height: calc(90vh - 7rem);
     }
 }
 
@@ -2040,7 +2040,7 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .vertical .half-part {
         height: 736px;
         height: 46rem;
-        height: calc(100vh - 7rem);
+        height: calc(90vh - 7rem);
     }
 }
 
@@ -2251,7 +2251,7 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .vertical .half-part {
         height: 832px;
         height: 52rem;
-        height: calc(100vh - 7rem);
+        height: calc(90vh - 7rem);
     }
 }
 
