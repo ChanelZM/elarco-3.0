@@ -311,41 +311,54 @@
                 playTickingSound(degrees);
                 console.log(degrees);
 
-                if(degrees > 4 || degrees < 0){
-                    //lastDegrees = degrees;
-                    console.log('timeout cleareddd');
-                    clearTimeout(timeoutFinish);
-                    timeoutFinish = null;
-                }
+                // if(degrees > 4 || degrees < 0){
+                //     //lastDegrees = degrees;
+                //     console.log('timeout cleareddd');
+                //     clearTimeout(timeoutFinish);
+                //     timeoutFinish = null;
+                // }
 
                 //If the user after half a second is still in the right position, consider it finished
                 if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
                     arch.style.transform = 'rotate(' + degrees + 'deg)';
-                    timeoutFinish = setTimeout(finished, 1000);
-                     function finished(){
-                         if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
-                             arch.style.transition = 'transform 0.2s ease';
-                             arch.style.transform = 'rotate(0deg)';
-                             archPath.style.fill = 'white';
-
-                             setTimeout(function(){
-                                 arch.style.transition = '';
-                             }, 200);
-
-                             sound.pause();
-
-                             document.removeEventListener('mousemove', calculateMouseDegrees);
-                             window.removeEventListener('deviceorientation', getZRotation);
-                             sound.removeEventListener('ended', loopSound);
-                             //If you have completed the game, show description about keyword
-                             toggleGameInfo('intuition');
-                             scrollDown.classList.remove('hidden');
-                         }
-                     }
+                    setFinishTimeout();
                 } else {
+                    timeoutFinish = null;
                     arch.style.transform = 'rotate(' + degrees + 'deg)';
+
+                    stopFinishTimeout();
                 }
             }
+
+            function setFinishTimeout(){
+                timeoutFinish = setTimeout(finished, 1000);
+                console.log('timeout set');
+            }
+
+            function stopFinishTimeout(){
+                clearTimeout(timeoutFinish);
+                console.log('timeout clearedddddddd');
+            }
+
+            //When the game is completed
+            function finished(){
+                 arch.style.transition = 'transform 0.2s ease';
+                 arch.style.transform = 'rotate(0deg)';
+                 archPath.style.fill = 'white';
+
+                 setTimeout(function(){
+                     arch.style.transition = '';
+                 }, 200);
+
+                 sound.pause();
+
+                 document.removeEventListener('mousemove', calculateMouseDegrees);
+                 window.removeEventListener('deviceorientation', getZRotation);
+                 sound.removeEventListener('ended', loopSound);
+                 //If you have completed the game, show description about keyword
+                 toggleGameInfo('intuition');
+                 scrollDown.classList.remove('hidden');
+             }
 
             function addMousemove(){
                 document.addEventListener('mousemove', calculateMouseDegrees);
