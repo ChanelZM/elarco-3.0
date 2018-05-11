@@ -7,13 +7,15 @@
         logo = document.querySelector('.header__logo'),
         body = document.querySelector('body');
 
-    navList.style.opacity = 0;
+    if(document.documentElement.classList){
+        navList.style.opacity = 0;
+        
+        hamburgerIcon.removeAttribute('hidden');
+        homeLink.classList.remove('hidden');
 
-    hamburgerIcon.removeAttribute('hidden');
-    homeLink.classList.remove('hidden');
-
-    navList.classList.add('hidden');
-    header.classList.add('header_toggle');
+        navList.classList.add('hidden');
+        header.classList.add('header_toggle');
+    }
 
     if(document.querySelector('#work')){
         logo.classList.add('header__logo_hidden');
