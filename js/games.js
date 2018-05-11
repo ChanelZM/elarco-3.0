@@ -313,6 +313,7 @@
 
                 if(lastDegrees != degrees){
                     lastDegrees = degrees;
+                    console.log('timeout cleared');
                     clearTimeout(timeoutFinish);
                 }
 
