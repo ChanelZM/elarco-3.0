@@ -318,7 +318,7 @@
                 //If the user after half a second is still in the right position, consider it finished
                 if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
                     arch.style.transform = 'rotate(' + degrees + 'deg)';
-                    timeoutFinish = setTimeout(finished, 500);
+                    timeoutFinish = setTimeout(finished, 1000);
                      function finished(){
                          if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
                              arch.style.transition = 'transform 0.2s ease';
