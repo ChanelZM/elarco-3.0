@@ -13,8 +13,7 @@
     var count = 0,
         gamesRect = gameSections[0].getBoundingClientRect();
 
-    var index,
-        timeoutFinish;
+    var index;
 
     document.querySelector('.complete-sound').load();
 
@@ -240,7 +239,8 @@
             archCoordinates = {};
 
             var soundInterval,
-                lastDegrees;
+                lastDegrees,
+                timeoutFinish;
 
             sound.load();
 
@@ -311,13 +311,6 @@
                 playTickingSound(degrees);
                 console.log(degrees);
 
-                // if(degrees > 4 || degrees < 0){
-                //     //lastDegrees = degrees;
-                //     console.log('timeout cleareddd');
-                //     clearTimeout(timeoutFinish);
-                //     timeoutFinish = null;
-                // }
-
                 //If the user after half a second is still in the right position, consider it finished
                 if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
                     arch.style.transform = 'rotate(' + degrees + 'deg)';
@@ -337,7 +330,8 @@
 
             function stopFinishTimeout(){
                 clearTimeout(timeoutFinish);
-                console.log('timeout clearedddddddd');
+                timeoutFinish = null;
+                console.log('timeout cleareddd');
             }
 
             //When the game is completed
