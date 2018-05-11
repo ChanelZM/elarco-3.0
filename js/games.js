@@ -313,8 +313,9 @@
 
                 if(lastDegrees != degrees){
                     lastDegrees = degrees;
-                    console.log('timeout cleared');
+                    console.log('timeout cleareddd');
                     clearTimeout(timeoutFinish);
+                    timeoutFinish = null;
                 }
 
                 //If the user after half a second is still in the right position, consider it finished
