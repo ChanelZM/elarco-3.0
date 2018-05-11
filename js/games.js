@@ -324,14 +324,16 @@
             }
 
             function setFinishTimeout(){
-                timeoutFinish = setTimeout(finished, 1000);
-                console.log('timeout set');
+                if(timeoutFinish == null){
+                    timeoutFinish = setTimeout(finished, 1000);
+                    console.log('timeout set');
+                }
             }
 
             function stopFinishTimeout(){
                 clearTimeout(timeoutFinish);
                 timeoutFinish = null;
-                console.log('timeout cleareddd');
+                console.log('timeout cleareddddddddd');
             }
 
             //When the game is completed
