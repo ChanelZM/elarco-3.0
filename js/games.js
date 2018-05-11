@@ -311,8 +311,8 @@
                 playTickingSound(degrees);
                 console.log(degrees);
 
-                if(lastDegrees != degrees){
-                    lastDegrees = degrees;
+                if(degrees > 4 || degrees < 0){
+                    //lastDegrees = degrees;
                     console.log('timeout cleareddd');
                     clearTimeout(timeoutFinish);
                     timeoutFinish = null;
