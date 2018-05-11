@@ -3033,8 +3033,8 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .animate .img_movein:nth-of-type(1) {
         -webkit-transition: all 2s ease;
-        -mos-transition: all 2s ease;
-        -mz-transition: all 2s ease;
+        -moz-transition: all 2s ease;
+        -ms-transition: all 2s ease;
         transition: all 2s ease;
         right: -100%;
         -webkit-animation-delay: 9s;
