@@ -309,6 +309,7 @@
                 degrees = Math.floor(degrees);
 
                 playTickingSound(degrees);
+                console.log(degrees);
 
                 if(lastDegrees != degrees){
                     lastDegrees = degrees;
