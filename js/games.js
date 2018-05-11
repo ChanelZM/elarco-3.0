@@ -234,13 +234,13 @@
         },
         intuition: function(){
             var arch = document.querySelector('.arch-intuition'),
-            archPath = document.querySelector('.arch-intuition__part'),
-            sound = document.querySelector('.ticking-sound'),
-            archCoordinates = {};
+                archPath = document.querySelector('.arch-intuition__part'),
+                sound = document.querySelector('.ticking-sound');
 
-            var soundInterval,
-                lastDegrees,
+            var archCoordinates = {},
                 timeoutFinish = null;
+
+            var soundInterval;
 
             sound.load();
 
@@ -309,51 +309,52 @@
                 degrees = Math.floor(degrees);
 
                 playTickingSound(degrees);
-                console.log(degrees);
 
-                //If the user after half a second is still in the right position, consider it finished
-                if(degrees <= 4 && degrees >= 0 && window.pageYOffset < gamesRect.height/2){
-                    arch.style.transform = 'rotate(' + degrees + 'deg)';
-                    setFinishTimeout();
-                } else {
-                    timeoutFinish = null;
-                    arch.style.transform = 'rotate(' + degrees + 'deg)';
+                arch.style.transform = 'rotate(' + degrees + 'deg)';
 
-                    stopFinishTimeout();
+                if(degrees > 4 && window.pageYOffset < gamesRect.height/2){
+                    redoTimeoutFinish(degrees);
+                } else if(degrees < -1 && window.pageYOffset < gamesRect.height/2){
+                    redoTimeoutFinish(degrees);
+                } else if(window.pageYOffset > gamesRect.height/2){
+                    clearTimeoutFinish();
                 }
             }
-
-            function setFinishTimeout(){
-                if(timeoutFinish == null){
-                    timeoutFinish = setTimeout(finished, 1000);
-                    console.log('timeout set');
-                }
-            }
-
-            function stopFinishTimeout(){
+            function redoTimeoutFinish(degrees){
                 clearTimeout(timeoutFinish);
+
+                timeoutFinish = setTimeout(function(){
+                    finished(degrees);
+                }, 1000);
+            }
+
+            function clearTimeoutFinish(){
+                clearTimeout(timeoutFinish);
+
                 timeoutFinish = null;
-                console.log('timeout cleareddddddddd');
             }
 
             //When the game is completed
-            function finished(){
-                 arch.style.transition = 'transform 0.2s ease';
-                 arch.style.transform = 'rotate(0deg)';
-                 archPath.style.fill = 'white';
+            function finished(degrees){
+                console.log(degrees);
+                if(degrees <= 6 && degrees >= -6){
+                    arch.style.transition = 'transform 0.2s ease';
+                    arch.style.transform = 'rotate(0deg)';
+                    archPath.style.fill = 'white';
 
-                 setTimeout(function(){
-                     arch.style.transition = '';
-                 }, 200);
+                    setTimeout(function(){
+                        arch.style.transition = '';
+                    }, 200);
 
-                 sound.pause();
+                    sound.pause();
 
-                 document.removeEventListener('mousemove', calculateMouseDegrees);
-                 window.removeEventListener('deviceorientation', getZRotation);
-                 sound.removeEventListener('ended', loopSound);
-                 //If you have completed the game, show description about keyword
-                 toggleGameInfo('intuition');
-                 scrollDown.classList.remove('hidden');
+                    document.removeEventListener('mousemove', calculateMouseDegrees);
+                    window.removeEventListener('deviceorientation', getZRotation);
+                    sound.removeEventListener('ended', loopSound);
+                    //If you have completed the game, show description about keyword
+                    toggleGameInfo('intuition');
+                    scrollDown.classList.remove('hidden');
+                }
              }
 
             function addMousemove(){
@@ -374,6 +375,7 @@
 
             document.addEventListener('mousemove', calculateMouseDegrees);
             sound.addEventListener('ended', loopSound);
+             window.addEventListener('scroll', clearTimeoutFinish);
 
             window.addEventListener('scroll', function(){
                 if(window.pageYOffset >= gamesRect.height && !document.querySelector('#intuition.hidden')) {
