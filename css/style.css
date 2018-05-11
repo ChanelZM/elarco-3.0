@@ -746,10 +746,10 @@ body {
 .section__title.section-work-2 {
     display: none;
 }
-.section-work-1.fade-out {
+/* .section-work-1.fade-out {
     opacity: 0;
     top: 0%;
-}
+} */
 .section-work-2.move-in {
     display: block;
     left: 5%;
@@ -2965,6 +2965,8 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         display: none;
     }
     .section-work-2 {
+        display: block;
+        left: -120%;
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -2973,11 +2975,22 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .section-work__imgs {
         display: block;
     }
+    .section__title.section-work-2 {
+        display: block;
+    }
+    .section__work-button {
+        display: block;
+        -webkit-transition: opacity 1s ease 3s, background-color 1s ease, color 1s ease;
+        -moz-transition: opacity 1s ease 3s, background-color 1s ease, color 1s ease;
+        -ms-transition: opacity 1s ease 3s, background-color 1s ease, color 1s ease;
+        transition: opacity 1s ease 3s, background-color 1s ease, color 1s ease;
+        opacity: 0;
+    }
     .img_movein {
         position: absolute;
         height: 68%;
         bottom: 0;
-        right: -120%;
+        right: -100%;
         -webkit-transition: right 1s ease;
         -moz-transition: right 1s ease;
         -ms-transition: right 1s ease;
@@ -2985,6 +2998,9 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .img_movein_start {
         right: 0;
+    }
+    .img_movein_marginr {
+        margin-right: 12%;
     }
     .img_movein_center {
         top: 50%;
@@ -2994,8 +3010,66 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     }
-    .img_movein_marginr {
-        margin-right: 12%;
+    .animate .section-work-1 {
+        opacity: 0;
+        top: 0%;
+    }
+    .animate .section-work-2 {
+        -webkit-transition: left 2s ease;
+        -moz-transition: left 2s ease;
+        -ms-transition: left 2s ease;
+        transition: left 2s ease;
+        left: 64px;
+        left: 4rem;
+    }
+    .animate .section__work-button {
+        opacity: 1;
+    }
+    .animate .img_movein {
+        -webkit-animation: moveInOut 12s infinite;
+        -moz-animation: moveInOut 12s infinite;
+        -ms-animation: moveInOut 12s infinite;
+        animation: moveInOut 12s infinite;
+    }
+    .animate .img_movein:nth-of-type(1) {
+        -webkit-transition: all 2s ease;
+        -mos-transition: all 2s ease;
+        -mz-transition: all 2s ease;
+        transition: all 2s ease;
+        right: -100%;
+        -webkit-animation-delay: 9s;
+        -moz-animation-delay: 9s;
+        -ms-animation-delay: 9s;
+        animation-delay: 9s;
+    }
+    .animate .img_movein:nth-of-type(2) {
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        -ms-animation-delay: 1s;
+        animation-delay: 1s;
+    }
+    .animate .img_movein:nth-of-type(3) {
+        -webkit-animation-delay: 5s;
+        -moz-animation-delay: 5s;
+        -ms-animation-delay: 5s;
+        animation-delay: 5s;
+    }
+    @keyframes moveInOut {
+        0% {
+            right: -100%;
+        }
+        10% {
+            right: 0;
+        }
+        30% {
+            right: 0;
+        }
+        40% {
+            right: -100%;
+        }
+        100% {
+            right: -100%;
+        }
     }
     #section-work {
         position: relative;
@@ -3453,15 +3527,18 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
 }
 @media screen and (orientation: landscape) and (min-width: 84rem){
     /* HOME */
+    .section__work-title {
+        top: 46%;
+    }
     .section-work-2.move-in {
         left: 11%;
         left: 11vw;
     }
     .section-work-2.section__par {
-        top: 65%;
+        top: 62%;
     }
     .section__work-button {
-        left: 49%;
+        left: 57%;
         bottom: 224px;
         bottom: 14rem;
     }
