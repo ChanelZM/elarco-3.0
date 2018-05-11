@@ -240,7 +240,7 @@
 
             var soundInterval,
                 lastDegrees,
-                timeoutFinish;
+                timeoutFinish = null;
 
             sound.load();
 
