@@ -325,7 +325,7 @@
 
                 timeoutFinish = setTimeout(function(){
                     finished(degrees);
-                }, 600);
+                }, 300);
             }
 
             function clearTimeoutFinish(){
