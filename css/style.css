@@ -611,8 +611,7 @@ body {
     top: 84%;
     height: 48px;
     height: 3rem;
-    width: 24px;
-    width: 1.5rem;
+    width: 8px;
     z-index: 1;
 }
 .scroll-down_display_none {
@@ -645,8 +644,6 @@ body {
 .scroll-down-rect {
     position: relative;
     height: 100%;
-    width: 27px;
-    width: 1.7rem;
     overflow: hidden;
 }
 .scroll-down-rect::after {
