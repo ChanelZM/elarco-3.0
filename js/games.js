@@ -361,9 +361,9 @@
                     function removeBlur(){
                         window.removeEventListener('scroll', removeBlur);
                         document.querySelector('#intuition .section__content-wrap').style.opacity = 0;
-                        document.querySelector('.arch-intuition').style.filter = 'blur(0px)';
+                        arch.removeAttribute('style');
                         document.querySelector('.arch-intuition.blur').classList.remove('blur');
-                        document.querySelector('.arch-intuition').style.transform = 'rotate(0deg) translate(-50%, -50%)';
+                        document.querySelector('.arch-intuition').classList.add('arch-intuition_finished');
                     }
                 }
              }
