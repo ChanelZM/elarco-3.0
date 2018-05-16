@@ -1465,8 +1465,8 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
 .split-wrap {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    width: 100vw;
+    /* width: 100%;
+    width: 100vw; */
 }
 .half-part {
     -webkit-box-sizing: border-box;
@@ -2981,8 +2981,12 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         margin-top: 1rem;
     }
     .section__work-title {
-        width: 640px;
-        width: 40rem;
+        width: auto;
+    }
+    .section__work-p {
+        width: 400px;
+        width: 25rem;
+        margin: 0;
     }
     .span_display_none {
         display: none;
@@ -3007,6 +3011,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section__work-button {
         display: block;
+        left: 64px;
+        left: 4rem;
+        top: 79%;
+        bottom: auto;
         -webkit-transition: opacity 1s ease 3s, background-color 1s ease, color 1s ease;
         -moz-transition: opacity 1s ease 3s, background-color 1s ease, color 1s ease;
         -ms-transition: opacity 1s ease 3s, background-color 1s ease, color 1s ease;
@@ -3022,6 +3030,9 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         -moz-transition: right 1s ease;
         -ms-transition: right 1s ease;
         transition: right 1s ease;
+    }
+    .img_full {
+        height: 100%;
     }
     .img_movein_start {
         right: 0;
@@ -3202,8 +3213,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         top: 53%;
     }
     .section-work-2.section__par {
-        margin-left: 32px;
-        margin-left: 2rem;
         top: 69%;
     }
     .section3__img,
@@ -3431,6 +3440,9 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         font-size: 96px;
         font-size: 6rem;
     }
+    .section__work-button {
+        top: 70%;
+    }
     /* WORK */
     .project__title {
         font-size: 51px;
@@ -3446,6 +3458,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .project__subject {
         padding: 48px 0 0 48px;
         padding: 3rem 0 0 3rem;
+    }
+    .section__work-p {
+        width: 480px;
+        width: 30rem;
     }
     /* PROJECT DETAIL */
     .basic-sldr-wrap {
@@ -3574,8 +3590,7 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         margin: 50% 0 0 0;
     }
     .section-work-2.section__par {
-        margin: 32px;
-        margin: 2rem;
+        top: 59%;
     }
     .service-sldr {
         -webkit-flex: 3;
@@ -3614,12 +3629,11 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         left: 11vw;
     }
     .section-work-2.section__par {
-        top: 62%;
+        top: 68%;
+        margin: 0;
     }
     .section__work-button {
-        left: 57%;
-        bottom: 224px;
-        bottom: 14rem;
+        top: 73%;
     }
     .section__par {
         bottom: 12%;
@@ -3824,20 +3838,15 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         font-size: 24px;
         font-size: 1.5rem;
     }
-    .section__work-button {
-        bottom: 24%;
-        bottom: 24vh;
-    }
-    .section__work-title {
-        width: 752px;
-        width: 47rem;
-    }
     .section-work-1 {
         width: auto;
     }
     .service-sldr__nav {
         margin: 32px;
         margin: 2rem;
+    }
+    .section__work-button {
+        top: 68%;
     }
 }
 
