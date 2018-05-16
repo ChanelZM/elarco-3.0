@@ -2785,6 +2785,8 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         -moz-align-items: center;
         -ms-align-items: center;
         align-items: center;
+        width: calc(50vw + 20rem);
+        width: fit-content;
     }
     .horizontal .half-part_white .half-part__text {
         order: 2;
@@ -2801,12 +2803,12 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         margin-left: -80vw;
     }
     .horizontal .half-part__text {
-        width: 40%;
-        width: 40vw;
+        width: 320px;
+        width: 20rem;
     }
     .horizontal .split-wrap__wrap {
-        width: 180%;
-        width: 180vw;
+        width: calc(100vw + 40rem);
+        width: fit-content;
     }
 }
 
@@ -3227,27 +3229,17 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .horizontal .half-part {
         height: 100%;
         height: 100vh;
-        width: 80%;
-        width: 80vw;
-    }
-    .horizontal .half-part__text {
-        width: 30%;
-        width: 30vw;
     }
     .horizontal #spain {
-        margin-left: -18.7%;
-        margin-left: -30vw;
+        margin-left: -320px;
+        margin-left: -20rem;
     }
     .horizontal #spain.margin-open-barcelona {
         margin-left: 0;
     }
     .horizontal #spain.margin-open-china {
-        margin-left: -37.4%;
-        margin-left: -60vw;
-    }
-    .horizontal .split-wrap__wrap {
-        width: 160%;
-        width: 160vw;
+        margin-left: -640px;
+        margin-left: -40rem;
     }
 }
 
@@ -3658,6 +3650,30 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         width: 848px;
         width: 53rem;
     }
+    /* CONTACT */
+    .horizontal .half-part {
+        width: calc(50vw + 30rem);
+        width: fit-content;
+    }
+    .horizontal .split-wrap__wrap {
+        width: calc(100vw + 60rem);
+        width: fit-content;
+    }
+    .horizontal .half-part__text {
+        width: 480px;
+        width: 30rem;
+    }
+    .horizontal #spain {
+        margin-left: -480px;
+        margin-left: -30rem;
+    }
+    .horizontal #spain.margin-open-barcelona {
+        margin-left: 0;
+    }
+    .horizontal #spain.margin-open-china {
+        margin-left: -960px;
+        margin-left: -60rem;
+    }
 }
 
 @media screen and (orientation: portrait) and (min-width: 84rem){
@@ -3765,29 +3781,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .horizontal .half-part {
         height: 100%;
         height: 100vh;
-        width: 75%;
-        width: 75vw;
     }
     .horizontal .half-part__text {
         padding: 32px;
         padding: 2rem;
-        width: 25%;
-        width: 25vw;
-    }
-    .horizontal #spain {
-        margin-left: -25%;
-        margin-left: -25vw;
-    }
-    .horizontal #spain.margin-open-barcelona {
-        margin-left: 0;
-    }
-    .horizontal #spain.margin-open-china {
-        margin-left: -50%;
-        margin-left: -50vw;
-    }
-    .horizontal .split-wrap__wrap {
-        width: 150%;
-        width: 150vw;
     }
 }
 
@@ -3907,12 +3904,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .horizontal .half-part {
         height: 100%;
         height: 100vh;
-        width: 72%;
-        width: 72vw;
-    }
-    .horizontal .half-part__text {
-        width: 22%;
-        width: 22vw;
     }
     .horizontal #spain {
         margin-left: -15.3%;
@@ -3924,10 +3915,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .horizontal #spain.margin-open-china {
         margin-left: -30.6%;
         margin-left: -44vw;
-    }
-    .horizontal .split-wrap__wrap {
-        width: 144%;
-        width: 144vw;
     }
 }
 

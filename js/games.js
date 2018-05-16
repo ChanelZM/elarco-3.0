@@ -362,7 +362,7 @@
                         window.removeEventListener('scroll', removeBlur);
                         document.querySelector('#intuition .section__content-wrap').style.opacity = 0;
                         document.querySelector('.arch-intuition').style.filter = 'blur(0px)';
-                        document.querySelector('.arch-intuition').style.transform = 'scale(1) translate(-50%, -50%) !important';
+                        document.querySelector('.arch-intuition.blur').style.transform = 'scale(1) translate(-50%, -50%) !important';
                     }
                 }
              }
