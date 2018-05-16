@@ -652,7 +652,7 @@ body {
     margin-left: -2px;
     height: 100%;
     width: 10px;
-    background-color: white;
+    background-color: lightgrey;
     content: '';
     -webkit-animation: mouse 1.5s ease infinite;
     -moz-animation: mouse 1.5s ease infinite;
@@ -989,10 +989,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
 .arch-intuition_finished {
     position: absolute;
     left: 50%;
-    -webkit-filter: blur(0px);
-    -moz-filter: blur(0px);
-    -ms-filter: blur(0px);
-    filter: blur(0px);
+    -webkit-filter: blur(0px) !important;
+    -moz-filter: blur(0px) !important;
+    -ms-filter: blur(0px) !important;
+    filter: blur(0px) !important;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
