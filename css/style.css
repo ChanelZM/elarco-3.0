@@ -234,8 +234,10 @@ body {
     position: fixed;
     right: 32px;
     right: 2rem;
-    height: 32px;
-    height: 2rem;
+    height: 48px;
+    height: 3rem;
+    width: 48px;
+    width: 3rem;
     cursor: pointer;
     z-index: 3;
 }
@@ -307,10 +309,10 @@ body {
     transition: transform 0.5s ease;
 }
 .top-nav__menu-icon_close rect:nth-of-type(1){
-    -webkit-transform: translateX(3px) rotate(41deg);
-    -moz-transform: translateX(3px) rotate(41deg);
-    -ms-transform: translateX(3px) rotate(41deg);
-    transform: translateX(3px) rotate(41deg);
+    -webkit-transform: translateX(3px) rotate(45deg);
+    -moz-transform: translateX(3px) rotate(45deg);
+    -ms-transform: translateX(3px) rotate(45deg);
+    transform: translateX(3px) rotate(45deg);
     -webkit-transition: transform 0.5s ease 0.4s;
     -moz-transition: transform 0.5s ease 0.4s;
     -ms-transition: transform 0.5s ease 0.4s;
@@ -327,9 +329,9 @@ body {
     transition: transform 0.5s ease;
 }
 .top-nav__menu-icon_close rect:nth-of-type(3){
-    -webkit-transform: rotate(-41deg) translate(-10px, -2px);
-    -moz-transform: rotate(-41deg) translate(-10px, -2px);
-    -ms-transform: rotate(-41deg) translate(-10px, -2px);
+    -webkit-transform: rotate(-45deg) translate(-10px, -2px);
+    -moz-transform: rotate(-45deg) translate(-10px, -2px);
+    -ms-transform: rotate(-45deg) translate(-10px, -2px);
     transform: rotate(-41deg) translate(-10px, -2px);
     -webkit-transition: transform 0.5s ease 0.4s;
     -moz-transition: transform 0.5s ease 0.4s;
@@ -2076,8 +2078,8 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
 @media screen and (orientation: landscape) and (min-width: 40rem){
     /* HOME */
     .section__content-wrap-medium {
-        width: 576px;
-        width: 36rem;
+        width: 480px;
+        width: 30rem;
     }
     /* PROJECT DETAIL */
     .basic-sldr-wrap,
@@ -3844,6 +3846,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         width: 30rem;
         height: 480px;
         height: 30rem;
+    }
+    .section__content-wrap-medium {
+        width: 576px;
+        width: 36rem;
     }
     .service-sldr {
         height: 900px;

@@ -9,7 +9,7 @@
 
     if(document.documentElement.classList){
         navList.style.opacity = 0;
-        
+
         hamburgerIcon.removeAttribute('hidden');
         homeLink.classList.remove('hidden');
 
@@ -39,8 +39,8 @@
             navList.classList.remove('hidden');
 
             body.style.overflow = 'hidden';
-            hamburgerIcon.querySelector('rect:nth-of-type(1)').style.transform = 'translateX(3px) rotate(41deg)';
-            hamburgerIcon.querySelector('rect:nth-of-type(3)').style.transform = 'rotate(-41deg) translate(-10px, -2px)';
+            hamburgerIcon.querySelector('rect:nth-of-type(1)').style.transform = 'translateX(3.5px) rotate(45deg)';
+            hamburgerIcon.querySelector('rect:nth-of-type(3)').style.transform = 'rotate(-45deg) translate(-12px, -2px)';
             setTimeout(function(){
                 navList.style.opacity = 1;
             }, 1);
