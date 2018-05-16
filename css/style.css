@@ -3023,15 +3023,23 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section__work-button {
         display: block;
-        left: 64px;
-        left: 4rem;
-        top: 79%;
+        left: 96px;
+        left: 6rem;
+        top: 50%;
         bottom: auto;
         -webkit-transition: opacity 1s ease 3s, background-color 1s ease, color 1s ease;
         -moz-transition: opacity 1s ease 3s, background-color 1s ease, color 1s ease;
         -ms-transition: opacity 1s ease 3s, background-color 1s ease, color 1s ease;
         transition: opacity 1s ease 3s, background-color 1s ease, color 1s ease;
         opacity: 0;
+        -webkit-transform: translateY(128px);
+        -moz-transform: translateY(128px);
+        -ms-transform: translateY(128px);
+        transform: translateY(128px);
+        -webkit-transform: translateY(8rem);
+        -moz-transform: translateY(8rem);
+        -ms-transform: translateY(8rem);
+        transform: translateY(8rem);
     }
     .img_movein {
         position: absolute;
@@ -3074,8 +3082,8 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         -moz-transition: left 0.8s ease 1s;
         -ms-transition: left 0.8s ease 1s;
         transition: left 0.8s ease 1s;
-        left: 64px;
-        left: 4rem;
+        left: 96px;
+        left: 6rem;
     }
     .animate .sentence1,
     .animate .sentence2 {
@@ -3159,16 +3167,18 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
             left: -100%;
             top: 46%;
             opacity: 1;
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+            -webkit-transform: translateY(-100%);
+            -moz-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
         }
         10% {
-            left: 4rem;
+            left: 96px;
+            left: 6rem;
         }
         40% {
-            left: 4rem;
+            left: 96px;
+            left: 6rem;
         }
         50% {
             left: -100%;
@@ -3177,10 +3187,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
             left: -100%;
             top: 46%;
             opacity: 1;
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+            -webkit-transform: translateY(-100%);
+            -moz-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
         }
     }
     #section-work {
@@ -3225,7 +3235,11 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         top: 53%;
     }
     .section-work-2.section__par {
-        top: 69%;
+        top: 50%;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        transform: none;
     }
     .section3__img,
     .section3__p,
@@ -3453,7 +3467,7 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         font-size: 6rem;
     }
     .section__work-button {
-        top: 70%;
+        top: 47%;
     }
     /* WORK */
     .project__title {
@@ -3602,7 +3616,7 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         margin: 50% 0 0 0;
     }
     .section-work-2.section__par {
-        top: 59%;
+        top: 45%;
     }
     .service-sldr {
         -webkit-flex: 3;
@@ -3641,11 +3655,11 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         left: 11vw;
     }
     .section-work-2.section__par {
-        top: 68%;
+        top: 50%;
         margin: 0;
     }
     .section__work-button {
-        top: 73%;
+        top: 50%;
     }
     .section__par {
         bottom: 12%;
@@ -3856,9 +3870,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .service-sldr__nav {
         margin: 32px;
         margin: 2rem;
-    }
-    .section__work-button {
-        top: 68%;
     }
 }
 

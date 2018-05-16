@@ -362,8 +362,6 @@
                         window.removeEventListener('scroll', removeBlur);
                         document.querySelector('#intuition .section__content-wrap').style.opacity = 0;
                         arch.removeAttribute('style');
-                        // document.querySelector('.arch-intuition').style.transition = 'filter 0.5 ease';
-                        // document.querySelector('.arch-intuition.blur').classList.remove('blur');
                         document.querySelector('.arch-intuition').classList.add('arch-intuition_finished');
                     }
                 }
