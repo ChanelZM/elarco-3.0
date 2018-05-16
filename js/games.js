@@ -353,7 +353,16 @@
                     sound.removeEventListener('ended', loopSound);
                     //If you have completed the game, show description about keyword
                     toggleGameInfo('intuition');
-                    scrollDown.classList.remove('hidden');
+                    setTimeout(function(){
+                        scrollDown.classList.remove('hidden');
+                    }, 3000);
+                    window.addEventListener('scroll', removeBlur);
+
+                    function removeBlur(){
+                        window.removeEventListener('scroll', removeBlur);
+                        document.querySelector('#intuition .section__content-wrap').style.opacity = 0;
+                        document.querySelector('.arch-intuition').style.filter = 'blur(0px)';
+                    }
                 }
              }
 
@@ -445,10 +454,10 @@
 
     function pauseGame(){
         //If games arent in the viewport and the pausesection is not visible
-        if(window.pageYOffset >= gamesRect.height && pauseSection.className.indexOf('hidden') >= 0){
+        if(window.pageYOffset >= gamesRect.height && pauseSection.className.indexOf('hidden') >= 0 && document.querySelector('#intuition.hidden')){
             pauseSection.classList.remove('hidden');
         //If games  are in the viewport  and the pauseSection is visible
-    } else if (window.pageYOffset <= gamesRect.height / 3  && pauseSection.className.indexOf('hidden') < 0){
+    } else if (window.pageYOffset <= gamesRect.height / 3  && pauseSection.className.indexOf('hidden') < 0 && document.querySelector('#intuition.hidden')){
             pauseSection.classList.add('hidden');
         }
     }
