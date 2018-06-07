@@ -511,6 +511,7 @@ body {
     height: fit-content;
 }
 .section__content-wrap {
+    width: 100%;
     padding: 16px;
     padding: 1rem;
     z-index: 1;
@@ -522,7 +523,7 @@ body {
 .section__title {
     margin: 0;
     font-size: 61px;
-    font-size: 3.8rem;
+    font-size: 3.6rem;
     font-weight: 200;
 }
 .section__title-lowercase {
@@ -2473,10 +2474,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         align-items: center;
         overflow: hidden;
     }
-    .basic-sldr__slide_picture {
-        position: absolute;
-        height: 100%;
-    }
     .basic-sldr__img {
         width: auto;
         height: 100%;
@@ -3945,14 +3942,14 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .horizontal #spain {
         margin-left: -15.3%;
-        margin-left: -22vw;
+        margin-left: -30rem;
     }
     .horizontal #spain.margin-open-barcelona {
         margin-left: 0;
     }
     .horizontal #spain.margin-open-china {
         margin-left: -30.6%;
-        margin-left: -44vw;
+        margin-left: -60rem;
     }
 }
 
