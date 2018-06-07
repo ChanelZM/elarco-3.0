@@ -312,11 +312,11 @@
 
                 arch.style.transform = 'rotate(' + degrees + 'deg)';
 
-                if(degrees > 12 && window.pageYOffset < gamesRect.height/2){
+                if(degrees > 4 && window.pageYOffset < gamesRect.height/2){
                     redoTimeoutFinish(degrees);
-                } else if(degrees < -12 && window.pageYOffset < gamesRect.height/2){
+                } else if(degrees < -4 && window.pageYOffset < gamesRect.height/2){
                     redoTimeoutFinish(degrees);
-                } else if(window.pageYOffset > gamesRect.height/2){
+                } else if(window.pageYOffset > gamesRect.height/2 && degrees <= 12 && degrees >= -12){
                     clearTimeoutFinish();
                 }
             }
