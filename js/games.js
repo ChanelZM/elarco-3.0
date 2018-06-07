@@ -312,9 +312,9 @@
 
                 arch.style.transform = 'rotate(' + degrees + 'deg)';
 
-                if(degrees > 4 && window.pageYOffset < gamesRect.height/2){
+                if(degrees > 12 && window.pageYOffset < gamesRect.height/2){
                     redoTimeoutFinish(degrees);
-                } else if(degrees < -1 && window.pageYOffset < gamesRect.height/2){
+                } else if(degrees < -12 && window.pageYOffset < gamesRect.height/2){
                     redoTimeoutFinish(degrees);
                 } else if(window.pageYOffset > gamesRect.height/2){
                     clearTimeoutFinish();
@@ -337,7 +337,7 @@
             //When the game is completed
             function finished(degrees){
                 console.log(degrees);
-                if(degrees <= 6 && degrees >= -6){
+                if(degrees <= 12 && degrees >= -12){
                     arch.style.transition = 'transform 0.2s ease';
                     arch.style.transform = 'rotate(0deg)';
                     archPath.style.fill = 'white';
