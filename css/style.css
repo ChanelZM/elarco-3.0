@@ -1370,14 +1370,14 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     height: 1.1rem;
     font-size: 0;
     border-radius: 2rem;
-    background-color: lightgrey;
+    background-color: #433F40;
 }
 .basic-sldr__nav-link:not(:last-child){
     margin-right: 5px;
     margin-right: 0.3rem;
 }
 .basic-sldr__nav-link-active {
-    background-color: #433F40;
+    background-color: lightgrey;
 }
 .section2,
 .section3 {
