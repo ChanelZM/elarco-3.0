@@ -2242,6 +2242,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         width: 640px;
         width: 40rem;
     }
+    .section3__slider {
+        min-height: 20rem;
+        background-color: lightgrey;
+    }
     .section3__slider-wrap {
         margin-left: auto;
     }
@@ -2395,6 +2399,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .section3__slider-wrap {
         width: 480px;
         width: 30rem;
+    }
+    .section3__slider {
+        min-height: 10rem;
+        background-color: lightgrey;
     }
     .section3__slider-wrap {
         margin-left: auto;
@@ -2588,6 +2596,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         width: 40rem;
         height: auto;
     }
+    .section3__slider {
+        min-height: 20rem;
+        background-color: lightgrey;
+    }
     .section3__img {
         width: inherit;
     }
@@ -2771,6 +2783,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .section3__slider-wrap {
         width: 63%;
         width: 63vw;
+    }
+    .section3__slider {
+        min-height: 30vw;
+        background-color: lightgrey;
     }
     .section3__slider-wrap {
         margin-left: auto;
@@ -3251,6 +3267,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         width: 640px;
         width: 40rem;
     }
+    .section3__slider {
+        min-height: 20rem;
+        background-color: lightgrey;
+    }
     /* CONTACT */
     .half-part__title {
         font-size: 35px;
@@ -3435,6 +3455,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         width: 688px;
         width: 43rem;
     }
+    .section3__slider {
+        min-height: 21rem;
+        background-color: lightgrey;
+    }
     .section3__slider-wrap {
         margin-left: auto;
         margin-right: auto;
@@ -3546,6 +3570,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .section3__slider-wrap {
         width: 752px;
         width: 47rem;
+    }
+    .section3__slider {
+        min-height: 23rem;
+        background-color: lightgrey;
     }
     .section3__slider-wrap {
         margin-left: auto;
@@ -3797,6 +3825,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         width: 944px;
         width: 59rem;
     }
+    .section3__slider {
+        min-height: 25rem;
+        background-color: lightgrey;
+    }
     .section4__title {
         left: 0;
         top: 10%;
@@ -3918,6 +3950,10 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     .section3__slider-wrap {
         width: 944px;
         width: 59rem;
+    }
+    .section3__slider {
+        min-height: 24rem;
+        background-color: lightgrey;
     }
     .project-quote_2 {
         width: 544px;
