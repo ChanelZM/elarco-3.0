@@ -334,10 +334,20 @@
                 timeoutFinish = null;
             }
 
+            function between(x, min, max){
+                var result;
+                if(x <= max && x >= min){
+                    result = true;
+                } else {
+                    result = false;
+                }
+                return result;
+            }
+
             //When the game is completed
             function finished(degrees){
                 console.log(degrees);
-                if(degrees <= 12 && degrees >= -12){
+                if(between(degrees, -12, 12) == true || between(degrees, 348, 360) == true){
                     arch.style.transition = 'transform 0.2s ease';
                     arch.style.transform = 'rotate(0deg)';
                     archPath.style.fill = 'white';
