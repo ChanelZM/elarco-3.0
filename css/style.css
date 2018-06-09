@@ -98,6 +98,10 @@ body {
     font-family: 'Futura Std', sans-serif;
     font-weight: 200;
 }
+img {
+    background-image: url('../img/load.gif') 50% no-repeat;
+    background-color: lightgrey;
+}
 .nav__list {
     margin: 0;
     padding: 0;
@@ -2244,7 +2248,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section3__slider {
         min-height: 20rem;
-        background-color: lightgrey;
     }
     .section3__slider-wrap {
         margin-left: auto;
@@ -2402,7 +2405,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section3__slider {
         min-height: 10rem;
-        background-color: lightgrey;
     }
     .section3__slider-wrap {
         margin-left: auto;
@@ -2598,7 +2600,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section3__slider {
         min-height: 20rem;
-        background-color: lightgrey;
     }
     .section3__img {
         width: inherit;
@@ -2786,7 +2787,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section3__slider {
         min-height: 30vw;
-        background-color: lightgrey;
     }
     .section3__slider-wrap {
         margin-left: auto;
@@ -3269,7 +3269,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section3__slider {
         min-height: 20rem;
-        background-color: lightgrey;
     }
     /* CONTACT */
     .half-part__title {
@@ -3457,7 +3456,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section3__slider {
         min-height: 21rem;
-        background-color: lightgrey;
     }
     .section3__slider-wrap {
         margin-left: auto;
@@ -3573,7 +3571,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section3__slider {
         min-height: 23rem;
-        background-color: lightgrey;
     }
     .section3__slider-wrap {
         margin-left: auto;
@@ -3827,7 +3824,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section3__slider {
         min-height: 25rem;
-        background-color: lightgrey;
     }
     .section4__title {
         left: 0;
@@ -3953,7 +3949,6 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section3__slider {
         min-height: 24rem;
-        background-color: lightgrey;
     }
     .project-quote_2 {
         width: 544px;
