@@ -453,7 +453,9 @@ body {
 }
 .section3__slider img {
     background-color: lightgrey;
-    background-image: url('../img/load.gif') 50% no-repeat;
+    background-image: url('../img/load.gif');
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 /* HOME PAGE */
