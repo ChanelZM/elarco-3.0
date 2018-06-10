@@ -98,6 +98,9 @@ body {
     font-family: 'Futura Std', sans-serif;
     font-weight: 200;
 }
+#home {
+    overflow-x: hidden;
+}
 .nav__list {
     margin: 0;
     padding: 0;
