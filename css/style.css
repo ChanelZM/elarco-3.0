@@ -519,6 +519,8 @@ body {
 }
 .section_fit{
     height: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 .section__content-wrap {
@@ -1457,7 +1459,9 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
 }
 .title-wrap {
     position: relative;
-    width: 100%;
+    height: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 .title-wrap__img {
@@ -1691,6 +1695,8 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .section_fit {
         height: 340px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
     }
     /* PROJECT DETAIL */
@@ -2843,6 +2849,8 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         -ms-align-items: center;
         align-items: center;
         width: calc(50vw + 20rem);
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
     .horizontal .half-part_white .half-part__text {
@@ -2865,6 +2873,8 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     .horizontal .split-wrap__wrap {
         width: calc(100vw + 40rem);
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 }
@@ -3744,10 +3754,14 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     /* CONTACT */
     .horizontal .half-part {
         width: calc(50vw + 30rem);
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
     .horizontal .split-wrap__wrap {
         width: calc(100vw + 60rem);
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
     .horizontal .half-part__text {
