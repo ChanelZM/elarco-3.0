@@ -63,6 +63,12 @@
             window.removeEventListener('wheel', detectScrollDirection);
             smoothScroll();
         }
+
+        if(position == amountOfProjects.length - 1){
+            document.querySelector('.scroll-down').classList.add('hidden');
+        } else {
+            document.querySelector('.scroll-down').classList.remove('hidden');
+        }
     }
 
     //Adapt margin to get an invert scrolling effect.
