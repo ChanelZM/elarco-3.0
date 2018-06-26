@@ -2677,6 +2677,7 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
         -ms-align-items: center;
         align-items: center;
         overflow: hidden;
+        margin: 0;
     }
     .basic-sldr__slide_picture {
         position: absolute;
@@ -3543,7 +3544,7 @@ https://codepen.io/ericlew/pen/bgGmOa?q=vibration%20animation&order=popularity&d
     }
     /* PROJECT DETAIL */
     .basic-sldr-wrap {
-        margin-left: 0;
+        margin: 0 auto;
     }
     .basic-sldr-text {
         padding: 7%;
